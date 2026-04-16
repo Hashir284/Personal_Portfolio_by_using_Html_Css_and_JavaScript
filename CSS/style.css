@@ -38,10 +38,17 @@ ul {
 .hidden {
     display: none !important;
 }
+.visible{
+    display: contents !important;
+}
 
 .main-content {
     padding-left: 270px;
 }
+
+/* .nav a:visited{
+    color: red;
+} */
 
 .container {
     max-width: 1100px;
@@ -551,28 +558,204 @@ box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
     line-height: 25px;
 }
 /* Portfolio */
-.portfolio .portfolio-heading{
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 30px;
-}
-.portfolio .portfolio-heading h2{
-    color: var(--text-000-900);
-    font-weight: 500;
-}
-.portfolio .portfolio-item{
-    flex: 0 0 33.333%;
-    max-width: 33.333%;
-    margin-bottom: 30px;
-}
-.portfolio .portfolio-item-inner{
-    border: 6px solid var(--bcg-000-100);
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;
+/* ===== PORTFOLIO SECTION ===== */
 
+.portfolio {
+    background: var(--bcg-000-900);
 }
-.portfolio img{
+
+/* Heading */
+.portfolio-heading {
+    margin-bottom: 10px;
+}
+
+.portfolio-heading h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-000-900);
+}
+
+/* Sub headings */
+.css-r-n {
+    line-height: 0;
+    margin: 20px 0 18px;
+    font-weight: 550;
+    font-size: 18px;
+    color: var(--skin-color);
+}
+
+/* Grid Layout */
+.portfolio .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Card */
+.portfolio-item {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 10px;
+}
+
+/* Card Inner */
+.portfolio-item-inner {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.portfolio-item-inner:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* Image */
+.portfolio-img {
+    height: 202px;
+    /* overflow: hidden; */
+}
+
+.portfolio-img img {
     width: 100%;
-    display: block;
+    height: 202px;
+    /* object-fit: cover; */
+    transition: 0.4s ease;
+}
+
+.portfolio-item-inner:hover img {
+    transform: scale(1.02);
+}
+
+/* Details */
+.p-detail {
+    height: 118px;
+    padding: 22px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+
+.p-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-000-900);
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.p-project-link {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.p-demo {
+    padding: 6px 12px;
+    /* margin-bottom: 10px; */
+    font-size: 13px;
+    border-radius: 20px;
+    background: var(--skin-color);
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.p-demo:hover {
+    background: #333;
+}
+
+.portfolio-item-inner{
+    height: 340px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1101px) {
+    .portfolio-item {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}
+@media (max-width: 850px) {
+    .portfolio-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolio-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+/* ===== REPO CARDS ===== */
+
+.practice-repos {
+    margin-top: 10px;
+}
+
+/* card */
+.repo-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* hover */
+.repo-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* icon */
+.repo-icon {
+    font-size: 30px;
+    color: var(--skin-color);
+}
+
+/* title */
+.repo-title {
+    /* margin-top: 0; */
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-000-900);
+}
+
+/* description */
+.repo-desc {
+    font-size: 13px;
+    color: var(--text-000-700);
+    line-height: 1.4;
+}
+
+/* button */
+.repo-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    border-radius: 20px;
+    background: var(--skin-color);
+    color: #fff;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.repo-btn:hover {
+    background: #222;
 }

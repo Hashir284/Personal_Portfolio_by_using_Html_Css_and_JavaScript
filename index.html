@@ -34,17 +34,19 @@
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#" class="active" onclick="pageChange('Home')"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="#" onclick="pageChange('About')"><i class="fa fa-user"></i>About</a></li>
-                <li><a href="#" onclick="pageChange('Services')"><i class="fa fa-list"></i>Services</a></li>
-                <li><a href="#"><i class="fa fa-briefcase" onclick="pageChange('Portfolio')"></i>Porfolio</a></li>
+                <li><a href="#" id="home" class="active" onclick="pageChange('home')"><i class="fa fa-home"></i>Home</a>
+                </li>
+                <li><a href="#" id="about" onclick="pageChange('about')"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#" id="service" onclick="pageChange('service')"><i class="fa fa-list"></i>Services</a></li>
+                <li><a href="#" id="portfolio" onclick="pageChange('portfolio')"><i
+                            class="fa fa-briefcase"></i>Porfolio</a></li>
                 <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
             </ul>
         </aside>
 
         <div class="main-content">
             <!-- Home -->
-            <section class="home sec">
+            <section class="home sec hidden">
                 <div class="container">
                     <div class="row">
 
@@ -70,7 +72,7 @@
             </section>
 
             <!-- About -->
-            <section class="about sec hidden">
+            <section class="about hidden sec">
                 <div class="container">
                     <div class="row">
                         <div class="sec-title padd-15">
@@ -283,7 +285,7 @@
             </section>
 
             <!-- Services -->
-            <section class="service sec hidden">
+            <section class="service hidden sec">
                 <div class="container">
                     <div class="row">
                         <div class="sec-title padd-15">
@@ -370,75 +372,88 @@
             </section>
 
             <!-- Portfolio -->
-            <section class="sec portfolio hidden">
+            <section class="sec portfolio">
                 <div class="container">
                     <div class="row">
                         <div class="sec-title padd-15">
-                            <h2>Portfolio</h2>
+                            <h2>Projects</h2>
                         </div>
                     </div>
+                    <!-- start  -->
                     <div class="row">
                         <div class="portfolio-heading padd-15">
-                            <h2>My last Projects : </h2>
+                            <h3 style="margin-bottom: 6px;">JavaScript Projects : </h3>
                         </div>
                     </div>
+                    <div class="row" id="portfolio-project">
+                    </div>
+                    <!-- start  -->
                     <div class="row">
-                        <!-- Porfolio Item Start -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="image.png" alt="">
-                                </div>
-                            </div>
+                        <div class="portfolio-heading padd-15">
+                            <h3 style="margin-top: 38px; margin-bottom: 2px;">CSS Webpages : </h3>
                         </div>
-                        <!-- Porfolio Item End -->
-                        <!-- Porfolio Item Start -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="image.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Porfolio Item End -->
-                        <!-- Porfolio Item Start -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="image.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Porfolio Item End -->
-                        <!-- Porfolio Item Start -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="image.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Porfolio Item End -->
-                        <!-- Porfolio Item Start -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="image.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Porfolio Item End -->
-                        <!-- Porfolio Item Start -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="image.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Porfolio Item End -->
                     </div>
-                </div>
+                    <div>
+                        <h4 class="css-r-n">Responisve Webpages:</h4>
+                        <div class="row" id="portfolio-project-css">
+                        </div>
+                        <h4 class="css-r-n" style="margin-top: 33px;">Without Responisve Webpages:</h4>
+                        <div class="row" id="portfolio-project-css2">
+                        </div>
+                    </div>
+                    <!-- start  -->
+                    <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h3 style="margin-top: 38px;">Practice Repositories : </h3>
+                        </div>
+                    </div>
+                    <div class="row practice-repos">
+
+                        <!-- Repo 1 -->
+                        <div class="portfolio-item">   
+                            <!-- padd-15 -->
+                            <div class="repo-card">
+                               <div class="repo-icon">
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+                                <h4 class="repo-title">HTML</h4>
+                                <p class="repo-desc">HTML practice repository for building and improving core web development skills.</p>
+                                <a href="https://github.com/hashir284/html" target="_blank"
+                                    class="repo-btn">
+                                    View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Repo 2 -->
+                        <div class="portfolio-item">   
+                            <!-- padd-15 -->
+                            <div class="repo-card">
+                                <div class="repo-icon">
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+                                <h4 class="repo-title">CSS</h4>
+                                <p class="repo-desc">CSS practice repo for layouts, styling, Flexbox, Grid, and Media queries.</p>
+                                <a href="https://github.com/hashir284/css" target="_blank" class="repo-btn">
+                                    View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Repo 3 -->
+                        <div class="portfolio-item">   
+                            <!-- padd-15 -->
+                            <div class="repo-card">
+                                <div class="repo-icon">
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+                                <h4 class="repo-title">JavaScript</h4>
+                                <p class="repo-desc">JavaScript practice repo for basics and mini projects. Focus on DOM, events, and logic build.</p>
+                                <a href="https://github.com/hashir284/JavaScript-Practice " target="_blank" class="repo-btn">
+                                    View on GitHub
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
             </section>
         </div>
 
@@ -447,6 +462,7 @@
 
 
     <script src="JavaScript/script.js"></script>
+    <script src="JavaScript/portfolio.js"></script>
 </body>
 
 </html>
