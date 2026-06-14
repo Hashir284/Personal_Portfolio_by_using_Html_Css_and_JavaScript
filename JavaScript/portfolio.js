@@ -1,3 +1,48 @@
+//  for react
+let reactArr = []
+class dataReact {
+    constructor(img, title, live, git) {
+        this.img = img
+        this.title = title
+        this.live = live
+        this.git = git
+        reactArr.push({ img: this.img, title: this.title, live: this.live, git: this.git })
+    }
+}
+let reactProjects = [
+    new dataReact(
+        'profitapp.png',
+        'Profit App by using local storage',
+        'https://profit-loss-local-storage-app.vercel.app',
+        'https://github.com/Hashir284/Simple-Profit-App'
+    )
+]
+let reactPortfolio = document.getElementById('portfolio-react')
+reactPortfolio.innerHTML = ''
+console.log(reactPortfolio);
+reactArr.forEach((e) => {
+    reactPortfolio.innerHTML += `
+    <div class="portfolio-item padd-15">
+        <div class="portfolio-item-inner shadow-dark">
+            <div class="portfolio-img">
+                <img src="Portfolio img/${e.img}" alt="${e.title}">
+            </div>
+            <div class="p-detail">
+                <div class="p-title">${e.title}</div>
+                <div class="p-project-link">
+                    <a class="p-demo" href="${e.live}" target="_blank">
+                        Live Demo
+                    </a>
+                    <a class="p-demo" href="${e.git}" target="_blank">
+                        GitHub 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>`
+})
+
+//  for javascript
 let arr = []
 class data {
     constructor(img, title, live, git) {

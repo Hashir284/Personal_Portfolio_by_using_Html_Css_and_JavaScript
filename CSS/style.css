@@ -36,7 +36,8 @@ ul {
 }
 
 .hidden {
-    display: none !important;
+
+    display: flex;
 }
 .visible{
     display: contents !important;
@@ -462,6 +463,7 @@ margin-top: 30px;
     position: relative;
 }
 .about .about-content .timeline .timeline-item{
+    padding-right: 20px;
     position: relative;
     padding-left: 37px;
     padding-bottom: 50px;
@@ -520,6 +522,7 @@ margin-top: 30px;
     max-width: 33.333%;
 }
 .service .service-item .service-item-inner{
+    height: 280px;
     background-color: var(--bcg-000-900);
     border: 1px solid var(--bcg-000-50);
     border-radius: 10px;
