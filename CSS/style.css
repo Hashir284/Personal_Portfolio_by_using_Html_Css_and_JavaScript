@@ -35,11 +35,10 @@ body {
 
 p{
   letter-spacing: 0.35px;
-  font-family: 'Jost','Poppins','Open Sans', sans-serif;
+  font-family: 'Roboto','Jost','Open Sans',"Poppins", sans-serif;
 }
 
 a, button{
-
   font-family: 'Inter','Roboto','Open Sans',"Poppins", sans-serif;
 }
 
@@ -306,7 +305,7 @@ h3.hello {
 }
 
 h3 span {
-  font-family: "Clicker Script", cursive;
+  font-family: 'Rancho',"Clicker Script", cursive;
   font-size: 30px;
   font-weight: 700;
   color: var(--skin-color);
@@ -435,19 +434,22 @@ color: var(--text-000-700);
   margin-top: 40px;
 }
 .about .about-content .skills .skill-item {
-  flex: 0 0 100%;
+  flex: 0 0 100%; 
 }
 /* .about .about-content .skills .skill-item .progressdetails */
 .progressdetails {
   justify-content: space-between;
   display: flex;
 }
+.progressdetails {
+  color: var(--text-000-700);
+}
 .progress {
   position: relative;
   margin-bottom: 50px;
 }
 .progress-in {
-  background: red;
+  background: var(--skin-color);
   height: 7px;
   border-radius: 15px;
   top: 10px;
