@@ -1,19 +1,26 @@
-let sec = document.querySelectorAll('.sec')
-function pageChange(page){
-    sec.forEach((sec)=>{
-        sec.classList.add('hidden')
-    })
+var typed = new Typed('.typing',
+    {
+        strings: ['Web Developer', 'Front-End Developer', 'Web designer'],
+        typeSpeed: 100,
+        BackSpeed: 60,
+        loop: true
+    }
+)
 
-    document.querySelector(`.${page}`).classList.remove('hidden')
-    document.querySelectorAll('.nav a').forEach((c)=>{
-        c.classList.remove('active')
+function locate(page, id) {
+    document.querySelectorAll('ul.nav a').forEach(e=>{
+        e.classList.remove('active')
     })
-    document.getElementById(page).classList.add('active')
+    document.getElementById(id).classList.add('active')
+    document.querySelectorAll('.sec').forEach(e => {
+        if (page === e.id) {
+            console.log(e.id);
+            console.log(page);
+            console.log(id);
+            
+            e.classList.remove('hidden')
+        } else {
+            e.classList.add('hidden')
+        }
+    })
 }
-// function pageChange(page) {
-//     document.querySelectorAll('.sec').forEach(sec => {
-//         sec.classList.add('hidden');
-//     });
-
-//     document.querySelector('.' + page.toLowerCase()).classList.remove('hidden');
-// }

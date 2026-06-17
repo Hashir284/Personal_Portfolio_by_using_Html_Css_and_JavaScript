@@ -1,4 +1,5 @@
 :root {
+  --border: #ffffff31;
   --bcg-000-900: #f2f2fc;
   --bcg-000-100: #fdf9ff;
   --bcg-000-50: #e8dfec;
@@ -6,7 +7,15 @@
   --text-000-700: #504e70;
 }
 
-* {
+body.dark {
+  --bcg-000-900: #151515;
+  --bcg-000-100: #222222;
+  --bcg-000-50: #393939;
+  --text-000-900: #ffffff;
+    --text-000-700: #e9e9e9;
+  }
+
+  * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -19,9 +28,23 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Open Sans',"Poppins", sans-serif;
   line-height: 1.5;
   font-size: 16px;
+}
+
+p{
+  letter-spacing: 0.35px;
+  font-family: 'Jost','Poppins','Open Sans', sans-serif;
+}
+
+a, button{
+
+  font-family: 'Inter','Roboto','Open Sans',"Poppins", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Jost','Roboto','Open Sans',"Poppins", sans-serif;
 }
 
 ul {
@@ -29,20 +52,21 @@ ul {
 }
 
 .sec {
-  background: var(--bcg-000-900);
-  min-height: 100vh;
-  display: block;
+background-color: var(--bcg-000-900) !important;
+min-height: 100vh;
+display: block;
   padding: 0 30px;
 }
 
 .hidden {
-  display: flex;
+  display: none !important;
 }
 .visible {
   display: contents !important;
 }
 
 .main-content {
+  background-color: var(--bcg-000-900) !important;
   padding-left: 270px;
 }
 
@@ -133,7 +157,7 @@ ul {
 .aside {
   border-right: 1px solid var(--bcg-000-50);
   width: 270px;
-  background: var(--bcg-000-100);
+background: var(--bcg-000-100);
   position: fixed;
   left: 0;
   top: 0;
@@ -369,10 +393,16 @@ h3.my-profession {
   font-size: 16px;
   line-height: 25px;
 }
+.about .about-content .about-text p {
+color: var(--text-000-700);
+  font-size: 18px;
+  line-height: 25px;
+}
 .about .about-content .personal-info {
   flex: 0 0 60%;
   max-width: 60%;
   margin-top: 40px;
+
 }
 .about .about-content .personal-info .row .info-item {
   flex: 0 0 50%;
@@ -600,7 +630,8 @@ h3.my-profession {
 
 /* Card Inner */
 .portfolio-item-inner {
-  background: #fff;
+background-color: var(--bcg-000-900);
+border: 1px solid var(--border);
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -705,7 +736,8 @@ h3.my-profession {
 
 /* card */
 .repo-card {
-  background: #fff;
+background-color: var(--bcg-000-900);
+border: 2px solid var(--border);
   border-radius: 12px;
   padding: 20px;
   text-align: center;
@@ -883,9 +915,9 @@ h3.my-profession {
     text-align: center;
   }
   .contact .contact-info-item {
-  max-width: 100%;
-  flex: 0 0 100%;
-}
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
 }
 @media (max-width: 550px) {
   .service .service-item,

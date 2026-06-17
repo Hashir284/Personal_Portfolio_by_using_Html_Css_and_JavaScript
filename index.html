@@ -24,8 +24,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;500;600;700&display=swap"
-        rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;500;600;700&display=swap"
+    rel="stylesheet">
+    <!-- font family 3 -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jost:wght@100..900&family=Open+Sans:wght@300..800&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
 
 </head>
 
@@ -34,25 +38,24 @@
 
         <aside class="aside">
             <div class="logo">
-                <a href="#"><span>A</span>tlas</a>
+                <a href="#"><span>H</span>ashir</a>
             </div>
             <div class="responsivenav">
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#" id="home" class="active" onclick="pageChange('home')"><i class="fa fa-home"></i>Home</a>
+                <li><a href="#home" id="homeLink" class="active" onclick="locate('home', this.id)"><i class="fa fa-home"></i>Home</a>
                 </li>
-                <li><a href="#" id="about" onclick="pageChange('about')"><i class="fa fa-user"></i>About</a></li>
-                <li><a href="#" id="service" onclick="pageChange('service')"><i class="fa fa-list"></i>Services</a></li>
-                <li><a href="#" id="portfolio" onclick="pageChange('portfolio')"><i
-                            class="fa fa-briefcase"></i>Porfolio</a></li>
-                <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
+                <li><a href="#about" id="aboutLink" onclick="locate('about', this.id)"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#service" id="serviceLink" onclick="locate('service', this.id)"><i class="fa fa-list"></i>Services</a></li>
+                <li><a href="#portfolio" id="portfolioLink" onclick="locate('portfolio', this.id)"><i class="fa fa-briefcase"></i>Porfolio</a></li>
+                <li><a href="#contact" id="contactLink" onclick="locate('contact',this.id)"><i class="fa fa-comments"></i>Contact</a></li>
             </ul>
         </aside>
 
         <div class="main-content">
             <!-- Home -->
-            <section class="home sec hidden">
+            <section class="home sec" id="home">
                 <div class="container">
                     <div class="row">
 
@@ -78,7 +81,7 @@
             </section>
 
             <!-- About -->
-            <section class="about hidden sec">
+            <section class="about sec hidden" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="sec-title padd-15">
@@ -287,7 +290,7 @@
             </section>
 
             <!-- Services -->
-            <section class="service hidden sec">
+            <section class="service sec hidden" id="service">
                 <div class="container">
                     <div class="row">
                         <div class="sec-title padd-15">
@@ -371,7 +374,7 @@
             </section>
 
             <!-- Portfolio -->
-            <section class="sec portfolio">
+            <section class="sec portfolio hidden" id="portfolio">
                 <div class="container">
                     <div class="row">
                         <div class="sec-title padd-15">
@@ -479,7 +482,7 @@
             </section>
 
             <!-- Contact Section  -->
-             <section class="contact sec">
+             <section class="contact sec hidden" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="sec-title padd-15">
@@ -560,7 +563,7 @@
                 <i class="fas fa-cog fa-spin"></i>
             </div>
             <div class="day-night s-icon">
-                <i class="fas fa-moon"></i>
+                <i class="fas"></i>
             </div>
             <h4>Themes Colors</h4>
             <div class="colors">
@@ -577,6 +580,8 @@
     <!-- <script src="JavaScript/script.js"></script> -->
     <script src="JavaScript/switcher.js"></script>
     <script src="JavaScript/portfoliocleancode.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="JavaScript/script.js"></script>
 </body>
 
 </html>
