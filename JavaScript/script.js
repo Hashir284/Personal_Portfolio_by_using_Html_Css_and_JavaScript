@@ -80,3 +80,8 @@ let allSec = document.querySelectorAll('.sec')
     }
 
 }
+
+// document.querySelector('.hire-me').addEventListener('click',function(){
+//     console.log(this);
+//     locate(this, '#contactLink')
+// })
