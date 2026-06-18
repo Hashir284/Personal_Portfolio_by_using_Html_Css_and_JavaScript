@@ -1,0 +1,16 @@
+section.back-section{
+    z-index: 1;
+}
+section.sec.active{
+    z-index: 1;
+    opacity: 1;
+    /* animation: slideSection 1s ease; */
+}
+@keyframes slideSection {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
