@@ -954,7 +954,15 @@ border: 2px solid var(--border);
     flex: 0 0 100%;
   }
   .aside {
-    padding: 30px 19px;
+    width: 240px !important;
+    padding: 0px 0px;
+    left: -240px;
+  }
+  .aside .responsivenav.open{
+    left: 265px;
+  }
+  .sec.open{
+    left: 265px;
   }
 }
 @media (max-width: 550px) {
