@@ -8,24 +8,43 @@ class Project {
 }
 
 let react = [
+    // new Project(
+    //     'reacttodo.png',
+    //     'Fire',
+    //     'https://todo-list-app-by-react.surge.sh/',
+    //     'https://github.com/Hashir284/todo-list-app-react'
+    // ),
+    new Project(
+    'expense-tracker.png',
+    'React Expense Tracker',
+    'https://react-expense-tracker-app-chi.vercel.app/',
+    'https://github.com/Hashir284/react-expense-tracker-app'
+    ),
+    new Project(
+    'notes-app.png',
+    'Notes App',
+    'https://notes-app-react-gules.vercel.app/',
+    'https://github.com/Hashir284/notes-app-react'
+    ),
+    new Project(
+        'firebaseauthentication.png',
+        'React Firebase Auth & Firestore CRUD',
+        'https://login-signup-24a03.web.app/',
+        'https://github.com/Hashir284/login-signup-by-firebase'
+    ),
+    new Project(
+    'contextapi-login.png',
+    'React Auth with Context API & DummyJSON',
+    'https://contextapi-login.vercel.app/',
+    'https://github.com/Hashir284/contextapi-login'
+    ),
     new Project(
         'reacttodo.png',
         'React Todo List App',
         'https://todo-list-app-by-react.surge.sh/',
         'https://github.com/Hashir284/todo-list-app-react'
     ),
-    new Project(
-        'firebaseauthentication.png',
-        'Firebase Authentication System',
-        'https://login-signup-24a03.web.app/',
-        'https://github.com/Hashir284/login-signup-by-firebase'
-    ),
-    new Project(
-        'fb.png',
-        'Facebook Home Page UI Clone',
-        'https://react-first-ui-facebook-home-page.vercel.app/',
-        'https://github.com/Hashir284/react-first-ui-facebook-home-page'
-    ),
+
     new Project(
         'apiaxiosproject1.png',
         'Product Listing (Axios API)',
@@ -38,9 +57,21 @@ let react = [
         'https://react-recipe-api.surge.sh/',
         'https://github.com/Hashir284/react-recipe-api'
     ),
+    new Project(
+        'fb.png',
+        'Facebook Home Page UI Clone',
+        'https://react-first-ui-facebook-home-page.vercel.app/',
+        'https://github.com/Hashir284/react-first-ui-facebook-home-page'
+    ),
 ];
 
 let jsProjects = [
+    new Project(
+    'calculator.png',
+    'Calculator with Keyboard Support',
+    'https://hashir284.github.io/calculator-by-simple-javascript/',
+    'https://github.com/Hashir284/YOUR_REPO'
+    ),
         new Project(
         'profitapp.png',
         'Profit App by using local storage',
@@ -51,7 +82,7 @@ let jsProjects = [
         'loginsignup.png',
         'Login Signup by using local storage',
         'https://login-sign-up-by-local-storage.vercel.app',
-        'https://login-sign-up-by-local-storage.vercel.app'
+        'https://github.com/Hashir284/Login-SignUp-by-Local-Storage'
     ),
     new Project(
         'namaztimeapp.png',
@@ -60,10 +91,10 @@ let jsProjects = [
         'https://github.com/Hashir284/Find-Namaz-Time'
     ),
     new Project(
-        'weatherapp .png',
+        'weatherapp.png',
         'Weather App by Api integration',
         'https://login-sign-up-by-local-storage.vercel.app',
-        'https://login-sign-up-by-local-storage.vercel.app'
+        'https://github.com/Simple-Weather-App'
     ),
     new Project(
         'enentapp.png',
